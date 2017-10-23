@@ -18,7 +18,7 @@ namespace AndroidXamarianApp1
 
             // Get our button from the layout resource.
             // and attach an event to it.
-            Button button = FindViewById<Button>(Resource.);
+            Button button = FindViewById<Button>(Resource.Id.button1);
 
             button.Click += delegate
             {

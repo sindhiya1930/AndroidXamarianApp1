@@ -1,6 +1,9 @@
 ﻿using Android.App;
 using Android.Widget;
 using Android.OS;
+using Microsoft.AppCenter;
+using Microsoft.AppCenter.Analytics;
+using Microsoft.AppCenter.Crashes;
 
 namespace AndroidXamarianApp1
 {
@@ -11,6 +14,10 @@ namespace AndroidXamarianApp1
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
+        
+            AppCenter.Start("9b922c57-15af-4317-89fc-b024f84030b6", typeof(Analytics), typeof(Crashes));
+            
+            
             base.OnCreate(savedInstanceState);
 
             // Set our view from the "main" layout resource
